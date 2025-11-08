@@ -1,0 +1,14 @@
+# Abaikan file sistem operasi
+.DS_Store
+Thumbs.db
+
+# Abaikan file log
+*.log
+npm-debug.log*
+
+# Abaikan folder settingan editor
+.vscode/
+.idea/
+
+# Abaikan folder 'node_modules' 
+node_modules/
