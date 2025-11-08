@@ -3089,3 +3089,24 @@ section,
 }
 
 /* ... (sisa kode .role-details-mu) ... */
+
+/* Batasi ukuran icon gambar di contact section */
+.contact-link .icon img.contact-icon {
+  width: 28px;       /* Lebar icon */
+  height: 28px;      /* Tinggi icon */
+  object-fit: contain; /* Pastikan tidak gepeng */
+  display: block;
+}
+
+/* Sedikit ubah wrapper biar proporsional */
+.contact-link .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  flex-shrink: 0;
+}
+
