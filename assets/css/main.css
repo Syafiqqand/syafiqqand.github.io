@@ -2665,3 +2665,35 @@ section,
   width: 30px;
   text-align: center;
 }
+
+/* Fix hero mobile: sembunyikan dekorasi & rapikan spacing */
+@media (max-width: 576px) {
+  .hero { 
+    padding: 96px 0 32px; 
+    overflow: hidden; 
+  }
+
+  /* Matikan pseudo-element/bentuk dekoratif di hero (aman untuk template BootstrapMade) */
+  .hero::before, 
+  .hero::after { 
+    content: none !important; 
+  }
+
+  /* Jika template punya elemen dekoratif di dalam hero, matikan juga */
+  .hero [class*="bg"], 
+  .hero [class*="shape"], 
+  .hero [class*="decor"] { 
+    display: none !important; 
+  }
+
+  /* Jarak tombol & ikon biar tidak tumpuk */
+  .hero .btn-get-started, 
+  .hero .btn-getstarted, 
+  .hero .btns { 
+    margin-top: 8px; 
+  }
+  .hero .social-links { 
+    gap: 14px; 
+    margin-top: 16px; 
+  }
+}
