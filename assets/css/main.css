@@ -2697,3 +2697,7 @@ section,
     margin-top: 16px; 
   }
 }
+
+.hero h1 span::after {
+  display: none !important;
+}
