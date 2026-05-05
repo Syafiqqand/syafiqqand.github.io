@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,25 +22,27 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
   </head>
 
   <body class="index-page">
     <header id="header" class="header d-flex align-items-center light-background sticky-top">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
 
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -91,12 +93,25 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
               <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-                <div class="image-wrapper">
-                  <img
-                    src="assets/img/profile/FotoProfilPorto-Syafiq.jpg"
-                    alt="Muhammad Syafiq Andiansyah"
-                    class="img-fluid"
-                  />
+                <div class="hero-visual" aria-hidden="true">
+                  <div class="visual-core"></div>
+                  <div class="visual-ring"></div>
+                  <div class="visual-ring ring-two"></div>
+                  <div class="visual-particle particle-one"></div>
+                  <div class="visual-particle particle-two"></div>
+                  <div class="visual-particle particle-three"></div>
+                  <div class="visual-chip chip-one">
+                    <i class="bi bi-controller"></i>
+                    <span>Unity</span>
+                  </div>
+                  <div class="visual-chip chip-two">
+                    <i class="bi bi-code-slash"></i>
+                    <span>C#</span>
+                  </div>
+                  <div class="visual-chip chip-three">
+                    <i class="bi bi-joystick"></i>
+                    <span>Gameplay</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,6 +119,742 @@
         </div>
       </section>
       <!-- /Hero Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>A summary of my technical skills and tools I use.</p>
+        </div>
+
+        <div class="container skills">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-box big h-100">
+                <h3>
+                  <i class="bi bi-code-slash me-2"></i>
+                  Programming Languages
+                </h3>
+                <ul class="skill-list">
+                  <li>
+                    <i class="devicon-c-plain colored"></i>
+                    C
+                  </li>
+                  <li>
+                    <i class="devicon-cplusplus-plain colored"></i>
+                    C++
+                  </li>
+                  <li>
+                    <i class="devicon-csharp-plain colored"></i>
+                    C#
+                  </li>
+                  <li>
+                    <img src="assets/img/icon/sql.png" alt="SQL" class="skill-icon" />
+                    SQL
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-box big h-100">
+                <h3>
+                  <i class="bi bi-tools me-2"></i>
+                  Engine & Framework
+                </h3>
+                <ul class="skill-list">
+                  <li>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                      alt="Unity"
+                      class="skill-icon"
+                    />
+                    Unity Engine
+                  </li>
+                  <li>
+                    <i class="devicon-notion-plain colored"></i>
+                    Notion
+                  </li>
+                  <li>
+                    <i class="devicon-github-original colored"></i>
+                    GitHub
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2><strong>Portfolio</strong></h2>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="fitRows"
+            data-sort="original-order"
+          >
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <div class="portfolio-slider swiper init-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Crogue.jpg"
+                            alt="Crogue — roguelike"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/CrogueIngame2.png"
+                            alt="Crogue gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/CrogueIngame1.png"
+                            alt="Crogue gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-config">
+                        {"loop":true,"speed":700,"autoplay":{"delay":2400,"disableOnInteraction":false},"slidesPerView":1,"spaceBetween":0}
+                      </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                      <a
+                        href="https://doniahmad.itch.io/crogue-demo"
+                        class="portfolio-details-link"
+                        target="_blank"
+                        title="Download di itch.io"
+                      >
+                        <i class="bi bi-link"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/Crogue.jpg"
+                        data-gallery="gallery-crogue"
+                        class="glightbox portfolio-lightbox"
+                      >
+                        <i class="bi bi-plus"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/CrogueIngame2.png"
+                        data-gallery="gallery-crogue"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                      <a
+                        href="assets/img/portfolio/CrogueIngame1.png"
+                        data-gallery="gallery-crogue"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <div style="display: flex; justify-content: space-between; align-items: center">
+                      <h4>Crogue</h4>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#role-crogue"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="role-crogue"
+                        class="role-toggle-btn"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                    </div>
+                    <p>A rogue's journey through another world of vengeance</p>
+                    <div class="portfolio-tags">
+                      <span>Rougelike</span>
+                      <span>Action</span>
+                    </div>
+                    <div class="collapse mt-3" id="role-crogue">
+                      <div class="role-details">
+                        <p><strong>Game Programmer ● Technical Art</strong></p>
+                        <p>
+                          Crogue is a roguelike game project inspired by Hades. In this project, I
+                          worked as a Technical Artist, creating shaders and several visual effects
+                          for the game's combat system and implementing them in the engine. I also
+                          contributed as a Game Programmer, responsible for implementing the UI,
+                          assets, and sound.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <div class="portfolio-slider swiper init-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/MbahShoe.jpg"
+                            alt="Mbah SHO — Si Juragan Sepatu"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/MbahSho1.jpg"
+                            alt="Mbah SHO gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/MbahSho2.jpg"
+                            alt="Mbah SHO gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-config">
+                        {"loop":true,"speed":700,"autoplay":{"delay":2400,"disableOnInteraction":false},"slidesPerView":1,"spaceBetween":0}
+                      </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                      <a
+                        href="https://akhmad-tegar.itch.io/mbah-sho-si-juragan-sepatu"
+                        class="portfolio-details-link"
+                        target="_blank"
+                        title="Download di itch.io"
+                      >
+                        <i class="bi bi-link"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/MbahShoe.jpg"
+                        data-gallery="gallery-mbahsho"
+                        class="glightbox portfolio-lightbox"
+                      >
+                        <i class="bi bi-plus"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/MbahSho1.jpg"
+                        data-gallery="gallery-mbahsho"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                      <a
+                        href="assets/img/portfolio/MbahSho2.jpg"
+                        data-gallery="gallery-mbahsho"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <div style="display: flex; justify-content: space-between; align-items: center">
+                      <h4>MBAH SHO : Si Juragan Sepatu</h4>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#role-mbahsho"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="role-mbahsho"
+                        class="role-toggle-btn"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                    </div>
+                    <p>
+                      Buy shoes from local craftsmen, sell them for profit, and become the richest
+                      Shoe Tycoon in Mojokerto!
+                    </p>
+                    <div class="portfolio-tags">
+                      <span>Simulation</span>
+                    </div>
+                    <div class="collapse mt-3" id="role-mbahsho">
+                      <div class="role-details">
+                        <p><strong>Game Programmer</strong></p>
+                        <p>
+                          Mbah Sho is an Android game project with simple mechanics where players
+                          swipe left or right on the screen. In this project, I worked as a Game
+                          Programmer, responsible for the NPC and the user interface (UI)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <div class="portfolio-slider swiper init-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/CloudFearer.jpg"
+                            alt="Cloud Farer"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Cloud1.png"
+                            alt="Cloud Farer gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Cloud2.png"
+                            alt="Cloud Farer gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-config">
+                        {"loop":true,"speed":700,"autoplay":{"delay":2400,"disableOnInteraction":false},"slidesPerView":1,"spaceBetween":0}
+                      </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                      <a
+                        href="https://growbyte.itch.io/cloud-farer"
+                        class="portfolio-details-link"
+                        target="_blank"
+                        title="Download di itch.io"
+                      >
+                        <i class="bi bi-link"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/CloudFearer.jpg"
+                        data-gallery="gallery-cloud"
+                        class="glightbox portfolio-lightbox"
+                      >
+                        <i class="bi bi-plus"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/Cloud1.png"
+                        data-gallery="gallery-cloud"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                      <a
+                        href="assets/img/portfolio/Cloud2.png"
+                        data-gallery="gallery-cloud"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <div style="display: flex; justify-content: space-between; align-items: center">
+                      <h4>Cloud Farer</h4>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#role-cloud"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="role-cloud"
+                        class="role-toggle-btn"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                    </div>
+                    <p>
+                      A 2.5D action-survival game where you protect an airship flying endlessly
+                      across a sea of clouds high above the sky.
+                    </p>
+                    <div class="portfolio-tags">
+                      <span>Survival</span>
+                      <span>Strategy</span>
+                    </div>
+                    <div class="collapse mt-3" id="role-cloud">
+                      <div class="role-details">
+                        <p><strong>Game Programmer</strong></p>
+                        <p>
+                          Cloud Fearer is a GameJam project — a survival game where the player must
+                          protect an airship from waves of attacking monsters. In this project, I
+                          worked as a Game Programmer, responsible for the core mechanics, player
+                          controls, and several UI elements.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <div class="portfolio-slider swiper init-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/WayOfLife.png"
+                            alt="Way Of Life"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Way1.png"
+                            alt="Way Of Life gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Way2.png"
+                            alt="Way Of Life gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-config">
+                        {"loop":true,"speed":700,"autoplay":{"delay":2400,"disableOnInteraction":false},"slidesPerView":1,"spaceBetween":0}
+                      </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                      <a
+                        href="https://muhammadandraramadhani.itch.io/wof"
+                        class="portfolio-details-link"
+                        target="_blank"
+                        title="Download di itch.io"
+                      >
+                        <i class="bi bi-link"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/WayOfLife.png"
+                        data-gallery="gallery-WayOfLife"
+                        class="glightbox portfolio-lightbox"
+                      >
+                        <i class="bi bi-plus"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/Way1.png"
+                        data-gallery="gallery-WayOfLife"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                      <a
+                        href="assets/img/portfolio/Way2.png"
+                        data-gallery="gallery-WayOfLife"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <div style="display: flex; justify-content: space-between; align-items: center">
+                      <h4>Way Of Life</h4>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#role-dr-bot"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="role-dr-bot"
+                        class="role-toggle-btn"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                    </div>
+                    <p>Crossing the road isn’t just about surviving.</p>
+                    <div class="portfolio-tags">
+                      <span>Action</span>
+                    </div>
+                    <div class="collapse mt-3" id="role-dr-bot">
+                      <div class="role-details">
+                        <p><strong>Game Programmer</strong></p>
+                        <p>
+                          Way Of Life is a GameJam project, a local multiplayer game where two
+                          players race to reach the finish line. Players can also interfere with
+                          each other by throwing bombs or slapping opponents. In this project, I
+                          worked as a Game Programmer, focusing on the Event System and Local
+                          Multiplayer implementation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <div class="portfolio-slider swiper init-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/ShutterSpirit.png"
+                            alt="Shutter Spirit"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Shutter1.png"
+                            alt="Shutter Spirit gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Shutter2.png"
+                            alt="Shutter Spirit gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-config">
+                        {"loop":true,"speed":700,"autoplay":{"delay":2400,"disableOnInteraction":false},"slidesPerView":1,"spaceBetween":0}
+                      </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                      <a
+                        href="https://growbyte.itch.io/shutter-spirit"
+                        class="portfolio-details-link"
+                        target="_blank"
+                        title="Download di itch.io"
+                      >
+                        <i class="bi bi-link"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/ShutterSpirit.png"
+                        data-gallery="gallery-shutter"
+                        class="glightbox portfolio-lightbox"
+                      >
+                        <i class="bi bi-plus"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/Shutter1.png"
+                        data-gallery="gallery-shutter"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                      <a
+                        href="assets/img/portfolio/Shutter2.png"
+                        data-gallery="gallery-shutter"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <div style="display: flex; justify-content: space-between; align-items: center">
+                      <h4>Shutter Spirit</h4>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#role-shutter"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="role-shutter"
+                        class="role-toggle-btn"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                    </div>
+                    <p>The greatest inspiration comes from the deepest fears</p>
+                    <div class="portfolio-tags">
+                      <span>Horror</span>
+                    </div>
+                    <div class="collapse mt-3" id="role-shutter">
+                      <div class="role-details">
+                        <p><strong>Game Programmer</strong></p>
+                        <p>
+                          Shutter Spirit is a GameJam project inspired by Fatal Frame, where the
+                          player must photograph ghosts inside an abandoned school. In this project,
+                          I worked as a Technical Artist, creating camera effects and several visual
+                          effects. I also contributed as a Game Programmer, responsible for
+                          implementing SFX and background music.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <div class="portfolio-slider swiper init-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/Saber Xmas Hockey.jpg"
+                            alt="Saber X-mas Hockey"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/saber 1.jpg"
+                            alt="Saber X-mas Hockey gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/saber 2.jpg"
+                            alt="Saber X-mas Hockey gameplay"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-config">
+                        {"loop":true,"speed":700,"autoplay":{"delay":2400,"disableOnInteraction":false},"slidesPerView":1,"spaceBetween":0}
+                      </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                      <a
+                        href="https://detayuli.itch.io/saber-xmas-hockey"
+                        class="portfolio-details-link"
+                        target="_blank"
+                        title="Download di itch.io"
+                      >
+                        <i class="bi bi-link"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/Saber Xmas Hockey.jpg"
+                        data-gallery="gallery-saber"
+                        class="glightbox portfolio-lightbox"
+                      >
+                        <i class="bi bi-plus"></i>
+                      </a>
+                      <a
+                        href="assets/img/portfolio/saber 1.jpg"
+                        data-gallery="gallery-saber"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                      <a
+                        href="assets/img/portfolio/saber 2.jpg"
+                        data-gallery="gallery-saber"
+                        class="glightbox portfolio-lightbox"
+                        style="display: none"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <div style="display: flex; justify-content: space-between; align-items: center">
+                      <h4>Saber X-mas Hockey</h4>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#role-saber"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="role-saber"
+                        class="role-toggle-btn"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                    </div>
+                    <p>
+                      Fast and energetic 2D arcade hockey game for two players in local multiplayer
+                    </p>
+                    <div class="portfolio-tags">
+                      <span>Arcade</span>
+                    </div>
+                    <div class="collapse mt-3" id="role-saber">
+                      <div class="role-details">
+                        <p><strong>Game Programmer</strong></p>
+                        <p>
+                          Saber X-mas Hockey is a GameJam project. In this project, I worked as a
+                          Game Programmer, responsible for developing the entire game mechanics and
+                          systems.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+          </div>
+
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-8">
+              <div class="info-box p-4">
+                <div class="contact-links">
+                  <a class="contact-link" href="mailto:msyafiqa18@gmail.com" aria-label="Email">
+                    <span class="icon">
+                      <img src="assets/img/icon/gmail.png" alt="Gmail" class="contact-icon" />
+                    </span>
+                    <span class="contact-text">msyafiqa18@gmail.com</span>
+                  </a>
+
+                  <a
+                    class="contact-link"
+                    href="https://www.linkedin.com/in/muhammad-syafiq-andiansyah/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <span class="icon" aria-hidden="true"><i class="bi bi-linkedin"></i></span>
+                    <span class="contact-text">Muhammad Syafiq Andiansyah</span>
+                  </a>
+
+                  <a
+                    class="contact-link"
+                    href="https://github.com/syafiqqand"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon" aria-hidden="true"><i class="bi bi-github"></i></span>
+                    <span class="contact-text">syafiqqand</span>
+                  </a>
+
+                  <a
+                    class="contact-link"
+                    href="https://www.instagram.com/syafiqqand?igsh=MWN4ZGdsaHE5NWswaQ=="
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                  >
+                    <span class="icon" aria-hidden="true"><i class="bi bi-instagram"></i></span>
+                    <span class="contact-text">@syafiqqand</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
     </main>
 
     <!-- Scroll Top -->
