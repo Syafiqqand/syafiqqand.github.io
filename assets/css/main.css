@@ -1104,7 +1104,28 @@ section,
   }
 
   .hero .hero-visual .visual-chip {
-    display: none;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    gap: 5px;
+  }
+
+  .hero .hero-visual .visual-chip i {
+    font-size: 0.8rem;
+  }
+
+  .hero .hero-visual .chip-one {
+    top: 5%;
+    right: 0;
+  }
+
+  .hero .hero-visual .chip-two {
+    bottom: 15%;
+    left: -5%;
+  }
+
+  .hero .hero-visual .chip-three {
+    top: 60%;
+    right: -5%;
   }
 }
 
