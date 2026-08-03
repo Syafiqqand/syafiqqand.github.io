@@ -1,1 +1,1 @@
-Syafiqqand
+Syafiq
